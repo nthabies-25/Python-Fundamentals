@@ -7,8 +7,8 @@
 # two numbers as parameters and prints their sum.
 
 def add_numbers(a, b):
-    # Your code here
-    pass
+    sum(a + b)
+    
 
 # Exercise 2: Return Values
 # Instructions:

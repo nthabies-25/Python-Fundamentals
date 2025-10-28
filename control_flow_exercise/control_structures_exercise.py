@@ -10,6 +10,15 @@ In this exercise, you will use conditional statements to categorise people based
 # - If age is between 18 and 65 (inclusive), print "You are an adult."
 # - If age is 66 or higher, print "You are a senior citizen."
 
+age = int(input("Enter your age:"))
+if age < 18:
+    print("You are a minor.")
+elif age >=18 or age<= 65:
+    print("You are an adult.")
+    
+elif age >=66:
+    print("You are a senior citizen.")
+
 
 """
 Exercise: Loops
@@ -21,6 +30,12 @@ In this exercise, you will use a loop to print numbers up to a user-defined limi
 # 2. Use a  for loop to iterate from 1 to the user-defined limit (inclusive) and print each number.
 # Use a while loop to iterate from 1 to the user-defined limit (inclusive) and print each number.
 # Initialise a variable to start the loop
+
+num = input("Enter a number: ")
+
+for i in num():
+
+
 
 
 """
