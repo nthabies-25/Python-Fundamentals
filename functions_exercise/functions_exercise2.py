@@ -13,6 +13,7 @@
 
 
 
+
 # 2. On the function below 'validate_username'
     # Validate the username that comes as a parameter
     # Use a loop to check all the characters on the username 
