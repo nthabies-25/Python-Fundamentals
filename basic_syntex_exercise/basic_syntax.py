@@ -13,22 +13,12 @@ def assign_variables():
     # Return the values of x, y, z, a, and b as a tuple.
 
     x = 10
-    print(type(x))
-
     y = 20.5
-    print(type(y))
-
     z = "Hello, World!"
-    print(type(z))
-
     a = True
-    print(type(a))
-
     b = False
-    
-
-   
-    
+    values_tuple = (x, y, z, a, b)
+    return values_tuple
 
 
 
@@ -45,12 +35,9 @@ def get_variable_type(variable):
     # Get the data type of the input variable.
     # Return the data type as a string.
 
-    x = 10
-    print(type(x))
-
-# get_variable_type(type())
-
-
+    
+    return type(variable)
+print(assign_variables())
 
 def get_variable_types():
     """
@@ -67,27 +54,15 @@ def get_variable_types():
     # Get the data type of b using the get_variable_type function.
     # Return the data types as a tuple.
     
-    t= ()
+    x, y, z, a, b = assign_variables()
+    type_x = get_variable_type(x)
+    type_y = get_variable_type(y)
+    type_z = get_variable_type(z)
+    type_a = get_variable_type(a)
+    type_b = get_variable_type(b)
 
-    x = 3
-    t.append(x)
-    print(type(x))
-
-    y = 3.2
-    t.append(x)
-    # return(type(y))
-
-    z = "Hello, World!"
-    t.append(z)
-
-    a = True
-    t.append(a)
-    
-    b = False
-    t.append(b)
-
-
-print(get_variable_type(t))
+    return (type_x, type_y, type_z, type_a, type_b)
+print(get_variable_types())
 
 def arithmetic_operations():
     """
@@ -105,19 +80,14 @@ def arithmetic_operations():
     # Return the results as a tuple.
     x = 7
     y = 4
-
-    z = x + y
-    return(z)
-
-    a = x - y
-    return(a)
-
-    b = x * y
-    return(b)
-
-
-    b = x / y
-    return(b)
+    addition = x + y
+    subtraction = x - y
+    multiplication = x * y
+    division = x / y
+    modulus = x % y
+    
+    return (addition, subtraction, multiplication, division, modulus)
+print(arithmetic_operations())
 
 def get_numbers():
     """
@@ -132,12 +102,11 @@ def get_numbers():
     # Return the list of numbers.
     x = []
 
-    if x in range(0 , 5):
-        return (x)
+    for num in range(0, 6):
+        x.append(num)
+    return x
 
+print(get_numbers())
 
 if __name__ == "__main":
-    print(arithmetic_operations())
-    print(assign_variables())
-    print(get_variable_type())
-    print(get_numbers())
+    get_numbers()
