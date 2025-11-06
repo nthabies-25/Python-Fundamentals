@@ -13,7 +13,7 @@ In this exercise, you will use conditional statements to categorise people based
 age = int(input("Enter your age:"))
 if age < 18:
     print("You are a minor.")
-elif age >=18 or age<= 65:
+elif age >=18 and age<= 65:
     print("You are an adult.")
     
 elif age >=66:
@@ -31,12 +31,15 @@ In this exercise, you will use a loop to print numbers up to a user-defined limi
 # Use a while loop to iterate from 1 to the user-defined limit (inclusive) and print each number.
 # Initialise a variable to start the loop
 
-num = input("Enter a number: ")
+num = int(input("Enter a number: "))
 
-for i in num():
+for i in range(1, num + 1):
+    print(i)
 
-
-
+i = 1
+while i <= num:
+    print(i)
+    i += 1
 
 """
 Exercise: Loop Control Statements
@@ -48,6 +51,12 @@ In this exercise, you will use a loop and loop control statements to print odd n
 # 2. Use a for loop to iterate from 1 to the user-defined limit (inclusive).
 # 3. Inside the loop, use a loop control statement to skip even numbers and print odd numbers.
 
+num = int(input("Enter a number: "))
+
+for i in range(1, num + 1):
+    if i % 2 == 0:
+        continue
+    print(i)
 
 """
 Exercise: Nested Loops
@@ -73,3 +82,7 @@ eg output:
 # The inner loop iterates from the user-defined multiplier to 1.
 # Fill in the code to complete the nested loops:
 
+num = int(input("Enter a number: "))
+for i in range(1, 11):
+    for j in range(1, num + 1):
+        print(f"{i} * {j} = {i*j}")

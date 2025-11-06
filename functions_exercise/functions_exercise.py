@@ -7,7 +7,9 @@
 # two numbers as parameters and prints their sum.
 
 def add_numbers(a, b):
-    sum(a + b)
+    addition = a + b
+
+    print(addition)
     
 
 # Exercise 2: Return Values
@@ -20,7 +22,11 @@ def add_numbers(a, b):
 
 def calculate_sum(numbers):
     # Your code here
-    pass
+    numbers = [1, 3, 5, 7, 9]
+    for i in numbers:
+        ans = i + i
+        return ans
+    
 
 # Exercise 3: Function Scoping
 # Instructions:
