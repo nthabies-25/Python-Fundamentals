@@ -82,7 +82,7 @@ eg output:
 # The inner loop iterates from the user-defined multiplier to 1.
 # Fill in the code to complete the nested loops:
 
-num = int(input("Enter a number: "))
-for i in range(1, 11):
-    for j in range(1, num + 1):
-        print(f"{i} * {j} = {i*j}")
+
+for i in range(10, 0, -1):
+    for j in range(num, 0, -1):
+        print(f"{i} x {j} = {i * j}")
