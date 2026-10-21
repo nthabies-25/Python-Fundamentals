@@ -31,6 +31,7 @@ def calculate_sum(numbers):
         
     return total
     
+    
 numbers = [1, 3, 5, 7, 9]
 print(calculate_sum(numbers))
     
